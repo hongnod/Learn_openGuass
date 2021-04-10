@@ -159,4 +159,13 @@ postgres=# grant all privileges to root;
 ALTER ROLE
 postgres=# \q
 ```
-Due different auth method, postgresql client can not connect og. 
+Due to different auth method, postgresql client can not connect og. there is an option(from: https://github.com/ljlilzu/ljlilzu.github.io/tree/master/course):
+```
+1 Download libpq-og.dll from this repo;
+2 Download HeidiSQL;
+3 Put libpq-og.dll into HeidiSQL home folder;
+4 Start HeidiSQL configuration with libpq-og.dll
+5 enjoy
+```
+
+
