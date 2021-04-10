@@ -2,7 +2,7 @@
 
 
 
-OpenGauss community released openGauss 2.0 recently, with this release, they provide a simplified package with official supporting Centos and OpenEuler. I trid the OpenEuler version on Debian 10 with succes, the step is:
+OpenGauss community released openGauss 2.0 recently, with this release, they provide a simplified package with official supporting Centos and OpenEuler. I tried the OpenEuler version on Debian 10 with succes, the step is:
 ```
 1 Download openguass and unzip to des folder;
 2 Setting enviroment: add $GAUSSHOME, append $GAUSSHOE/bin to $PATH, and $GAUSSHOE/lib to $LD_LIBRARY_PATH;
