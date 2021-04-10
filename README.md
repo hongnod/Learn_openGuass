@@ -4,13 +4,13 @@
 
 OpenGauss community released openGauss 2.0 recently, with this release, they provide a simplified package with official supporting Centos and OpenEuler. I tried the OpenEuler version on Debian 10 with success, the step is:
 ```
-1 Download openguass and unzip to des folder;
+1 Download opengauss and unzip to destination folder;
 2 Setting enviroment: add $GAUSSHOME, append $GAUSSHOE/bin to $PATH, and $GAUSSHOE/lib to $LD_LIBRARY_PATH;
 3 run gs_initdb to test which libs are lack, install them;
 4 run gs_initdb to init the database;
 5 run gs_ctl to start the database;
 6 run gsql to create and grant a login user (initail user is not allowed to login)
-7 test connecton and more setting such as remote accessing. more
+7 test connecton and more setting such as remote access. more.
 ```
 process noted as:
 ```
