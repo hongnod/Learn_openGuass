@@ -21,7 +21,7 @@ user@debian:~$ echo $LD_LIBRARY_PATH
 user@debian:~$ cd $GAUSSHOME
 user@debian:/opt/opengauss$ pwd
 /opt/opengauss
-user@debian:/opt/opengauss$ gs_initdb -w 2019@Swic -D $GAUSSHOME/data/gsdb --nodename "sgnode" --locale="en_US.UTF-8"
+user@debian:/opt/opengauss$ gs_initdb -w password -D $GAUSSHOME/data/gsdb --nodename "sgnode" --locale="en_US.UTF-8"
 /opt/opengauss/bin/gaussdb: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory
 no data was returned by command ""/opt/opengauss/bin/gaussdb" -V"
 The program "gaussdb" is needed by gs_initdb but was not found in the
