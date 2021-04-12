@@ -1,0 +1,17 @@
+#Put this file into /usr/lib/systemd/system/
+[Unit]
+Description=openGauss Database Server
+#Documentation=man:postgres(1)
+
+[Service]
+Environment=GAUSSHOME=/opt/opengauss
+Type=simple
+User=user
+ExecStart=/opt/opengauss/bin/gaussdb -D /opt/opengauss/data/gsdb --single_node
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=mixed
+KillSignal=SIGINT
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target
