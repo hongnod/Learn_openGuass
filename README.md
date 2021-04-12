@@ -11,6 +11,16 @@ OpenGauss community released openGauss 2.0 recently, with this release, they pro
 5 run gs_ctl to start the database;
 6 run gsql to create and grant a login user (initial user is not allowed to login)
 7 test connecton and more setting such as remote access. more.
+8 create a systemd service: 
+  (1) In /etc/ld.so.conf.d/  create opengauss.conf, add one line in it :
+     ```
+         /opt/opengauss/lib
+     ```
+   (2) download "opengauss.service" put it into /usr/lib/systemd/system/ 
+        run : sudo systemctl enable opengauss
+        and : sudo systemctl start opengauss
+  
+  
 ```
 process noted as:
 ```
