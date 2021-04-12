@@ -178,3 +178,8 @@ postgres=# \q
 5 enjoy
 ```
 
+测试结论：
+1、占用CPU、内存稍高
+![ksnip_20210412-144036](https://user-images.githubusercontent.com/6680267/114372769-80aa6000-9bb4-11eb-8ed3-38ed7e94d890.png)
+2、客户端工具比较缺乏，HeidiSQL 可以变通连上，但还是存在问题，自家的Datastudio连接不上，显示内部错误，而且是Jave开发的（对不起，作为用户，我真的很讨厌Java）
+
